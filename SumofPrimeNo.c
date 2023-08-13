@@ -2,10 +2,11 @@
 #include <math.h>
 int findprime(n)
 {
-    // if(n==1)
-    // return 0;
+    if (n == 1)
+        return 0;
     // printf(" Neither a prime nor prime Number ");
     int flag = 1;
+
     for (int i = 2; i <= sqrt(n); i++)
     {
         if (n % i == 0)
@@ -21,6 +22,7 @@ int findprime(n)
 int main()
 {
     int n1, n2;
+    int sum = 0;
     printf("Enter lower value ");
     scanf("%d", &n1);
     printf("Enter higer value ");
@@ -29,8 +31,11 @@ int main()
     {
         if (findprime(i))
         {
-            printf("%d ", i);
+            sum = sum + i;
         }
     }
+    printf(" %d ", sum);
     return 0;
 }
+
+// time complexity O(n)
