@@ -9,7 +9,7 @@ int main(){
     token =strtok(date,"-");
     // strtok is use  for break a string...... strtok string ko break krta hai
     token=strtok(NULL,"-");
-    int i= atoi(token);
+    int i= atoi(token);// atoi means ascii to integer
     printf("Month has %d days",arr[i-1]);
     return 0;
 }
