@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
-int main(){
+int main()
+{
     int arr[]={31,28,31,30,31,30,31,31,30,31,30,31};
     printf("Enter the date \n");
     char date[11];

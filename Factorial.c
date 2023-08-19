@@ -1,7 +1,7 @@
 //factorial of any number
 #include<stdio.h>
 
-// unsigned int fact(unsigned int n)
+// unsigned int fact(unsigned int n)// Unsigned large range
 // {
 //     int res=1;
 //     for(int i=2; i<=n; i++)
@@ -31,3 +31,14 @@ int main(){
 }
 
 //Time Complexity O(n)
+/*
+Another approach 
+int n;
+unsigned long long fact=1;
+print("Enter a Number to find factorial");
+scanf("%d",&n);
+for(int i=1; i<=n; i++)
+    fact=fact*i;
+printf("Factorial of number %d = %llu",n,fact);
+
+*/
