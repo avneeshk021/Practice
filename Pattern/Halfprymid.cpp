@@ -12,6 +12,9 @@ int main()
     //  }   
     //  cout<<endl;
     // }
+    
+
+//---- Inverted Prymid-----
     for(int row=0; row<7; row++)
     {
      for(int col=0; col<7-row; col++)
@@ -19,6 +22,17 @@ int main()
         cout<<"* ";
      }   
      cout<<endl;
+    }
+
+    //-----Numeric Prymid-----
+    for(int row=0; row<7; row++)
+    {
+        for(int col=0; col<row-1; col++)
+        {
+            cout<<col+1;
+            
+        }
+        cout<<endl;
     }
 
 }
