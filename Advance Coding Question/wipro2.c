@@ -30,4 +30,3 @@ int main()
     printf("%d", countSetBits(n));
     return 0;
 }
-}
