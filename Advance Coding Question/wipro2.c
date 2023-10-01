@@ -10,21 +10,24 @@ output
 
 */
 #include <stdio.h>
-unsigned int SetBits(unsigned int n)
+ 
+
+int countSetBits(int n)
 {
-    unsigned int count = 0;
-    while (n) {
-        count += n & 1;
-        n >>= 1;
-    }
-    return count;
+    // base case
+    if (n == 0)
+        return 0;
+    else
+        // if last bit set add 1 else add 0
+        return (n & 1) + countSetBits(n >> 1);
 }
  
 
 int main()
 {
-    int i;
-    scanf("%d",&i);
-    printf("%d", SetBits(i));
+    int n = 9;
+    // function calling
+    printf("%d", countSetBits(n));
     return 0;
+}
 }
